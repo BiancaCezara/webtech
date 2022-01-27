@@ -1,6 +1,7 @@
 # webtech
 
 
-Test. Introducere în tehnologiile web.
-SSH test.
+
+Introducere în tehnologiile web.
+
 
