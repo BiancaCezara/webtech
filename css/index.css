@@ -104,7 +104,6 @@ h1 {
 
 }
 
-
 .paragraph1 {
 
     font-family: Didot, serif;
@@ -166,8 +165,8 @@ p::first-line {
 
 }
 
-.body{
-    padding:0;
+.body {
+    padding: 0;
 }
 
 .articles-container {
@@ -301,6 +300,136 @@ p::first-line {
     border-radius: 2.5vw;
 }
 
+#hidden-div {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 45vw;
+    top: 32vw;
+    width: 40%;
+    max-height: 40%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3
+}
+
+#hidden-paragraph-1 {
+    text-align: center;
+    background-color: #ddd1c0;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-2:not(#hidden-div-image-1) {
+    text-align: justify;
+    max-width: 70%;
+    margin: 5px;
+    font-size: 1.1vw;
+
+}
+
+#hidden-div-image-1 {
+    float: right;
+    position: relative;
+    right: 1.5vw;
+    top: 4vw;
+    width: 9vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+}
+
+#hidden-div-1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 8vw;
+    top: 71vw;
+    width: 45%;
+    height: 20%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-3 {
+    text-align: center;
+    background-color: #d2dcdd;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-4:not(#hidden-div-image-2) {
+    text-align: justify;
+    position: relative;
+    left: 10vw;
+    top: -7vw;
+    max-width: 70%;
+    height: 70%;
+    margin: 5px;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+
+}
+
+#hidden-div-image-2 {
+    float: start;
+    position: relative;
+    top: 4.5vw;
+    left: 1vw;
+    width: 8.5vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+
+}
+
+#hidden-div-2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 48vw;
+    top: 67vw;
+    width: 45%;
+    height: 21%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-5 {
+    text-align: center;
+    background-color: #ddd1c0;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-6:not(#hidden-div-image-3) {
+    text-align: justify;
+    position: relative;
+    left: 10vw;
+    top: -5vw;
+    max-width: 70%;
+    height: 70%;
+    margin: 5px;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-div-image-3 {
+    float: start;
+    position: relative;
+    top: 4.5vw;
+    left: 1vw;
+    width: 8.5vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+}
+
 footer {
     font-family: Didot, serif;
     position: relative;
@@ -314,10 +443,12 @@ footer {
 .contacts-wrap {
     position: relative;
     width: 100%;
+
 }
 
-.contacts-body{
+.contacts-body {
     overflow: hidden scroll;
+
 }
 
 .contacts-bg {
@@ -326,7 +457,6 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-
 }
 
 .contacts-content {
@@ -336,6 +466,9 @@ footer {
     font-size: 1.5vw;
     font-family: Rockwell;
     color: beige;
+    max-width: 100%;
+    max-height: 100%;
+
 
 }
 
@@ -343,8 +476,6 @@ footer {
     font-size: 3.5vw;
     color: rgb(66, 50, 38);
     font-weight: bold;
-
-
 }
 
 .topnav-contacts {
@@ -386,4 +517,137 @@ footer {
 .topnav-contacts > a:not(.active):hover {
     color: cornsilk;
 
+}
+
+.coffee-day-info {
+    display: grid;
+    position: relative;
+    left: 5vw;
+    grid-auto-columns: 50vw 50vw;
+    grid-gap: 1vw 1vw;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+#sec-banner {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.info-item {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 90%;
+    border: tan solid 1px;
+    border-radius: 5px;
+    overflow: visible;
+    padding: 1.5vw;
+
+
+}
+
+#img1 {
+    position: relative;
+    left: 5vw;
+    height: 35vw;
+    width: 70vw;
+    display: block;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+}
+
+@keyframes imageLoading {
+    from { opacity: 0.3;}
+    to {opacity: 1}
+}
+
+.countdown-item {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    border: azure solid 1px;
+    border-radius: 5px;
+    background: url("../images/coffee-table-wood-background.jpeg") no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+
+}
+
+#countdown-item-content {
+    padding: 4vw;
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    left: 0.5vw;
+    font-family: 'Crimson Pro', serif;
+    font-size: 4.6vw;
+    font-weight: bold;
+    color: rgb(84, 78, 73);
+}
+
+.coffee-day-title {
+    position: relative;
+    left: 1.7vw;
+    top: 0.5vw;
+    text-align: left;
+    font-family: "Big Caslon", serif;
+    font-weight: bolder;
+    font-size: 1.7vw;
+    padding: 0.5vw;
+}
+
+.coffee-day-info li {
+    padding: 0.5vw;
+}
+
+#right-arrow {
+    max-width: 1vw;
+    max-height: 1.4vw;
+    z-index: 1;
+    position: absolute;
+    left: 86vw;
+    top: 18vw;
+    text-align: center;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1vw;
+    padding: 1.2vw;
+    background-color: rgba(91, 86, 83, 0.24)
+}
+
+#left-arrow {
+    max-width: 1vw;
+    max-height: 1.4vw;
+    z-index: 1;
+    position: absolute;
+    top: 18vw;
+    text-align: center;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1vw;
+    padding: 1.2vw;
+    background-color: rgba(91, 86, 83, 0.24)
+
+}
+
+#img2 {
+    display: none;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+    height: 40vw;
+    width: 90vw;
+    position: relative;
+    left: 0vw;
+
+}
+
+#img3 {
+    display: none;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+    height: 40vw;
+    width: 90vw;
 }
