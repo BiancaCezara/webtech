@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecb4e04-4fee-4bf9-b266-0c5b22e1d989" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/International-Coffee-Day-2019-wshes-wallpaper.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Screenshot-2019-01-25-at-09.20.12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/brazilian_coffee.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cafe-au-lait-recipe-1374920-hero-01-0b1bbc7d69304240a1e864cef38eff88.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/coffee-green-brown.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/coffee-table-wood-background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/international-coffe-day-banner.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/international-coffee-day-logo-horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/laptop-and-coffee.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/minimal-coffee-cup.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/morning-coffee-wallpaper.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/morning-coffee.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slideshow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/coffeetalks.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coffeetalks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/internationalcoffeeday.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/internationalcoffeeday.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +117,8 @@
       <workItem from="1648066474841" duration="3293000" />
       <workItem from="1648107445154" duration="5807000" />
       <workItem from="1648556201870" duration="5301000" />
-      <workItem from="1649092019053" duration="23445000" />
+      <workItem from="1649092019053" duration="24040000" />
+      <workItem from="1649274801807" duration="327000" />
     </task>
     <servers />
   </component>
