@@ -31,7 +31,6 @@ h1 {
 }
 
 .logo {
-
     position: relative;
     top: 1.0vw;
     left: 2.4vw;
@@ -39,10 +38,11 @@ h1 {
     width: 4.5vw;
 }
 
+
 .topnav a:not(.logo) {
     position: relative;
     align-items: center;
-    padding: 1.5vw;
+    padding: 1vw;
     width: 80px;
     top: 0.5vw;
     left: 8.0vw;
@@ -274,7 +274,7 @@ p::first-line {
     padding: 6vw;
     border-radius: 2.5vw;
     font-family: "Big Caslon", serif;
-    ax-width: 100%;
+    max-width: 100%;
 }
 
 .article-3 > a {
@@ -544,7 +544,6 @@ footer {
     overflow: visible;
     padding: 1.5vw;
 
-
 }
 
 #img1 {
@@ -558,8 +557,12 @@ footer {
 }
 
 @keyframes imageLoading {
-    from { opacity: 0.3;}
-    to {opacity: 1}
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .countdown-item {
@@ -630,7 +633,6 @@ footer {
     font-size: 1vw;
     padding: 1.2vw;
     background-color: rgba(91, 86, 83, 0.24)
-
 }
 
 #img2 {
@@ -641,7 +643,6 @@ footer {
     width: 90vw;
     position: relative;
     left: 0vw;
-
 }
 
 #img3 {
@@ -650,4 +651,13 @@ footer {
     animation-duration: 1s;
     height: 40vw;
     width: 90vw;
+}
+
+.user-input-response{
+    width: auto;
+    margin: auto;
+    font-family: "Big Caslon", serif;
+    font-size: 15vw;
+    font-weight: bolder;
+    color: snow;
 }
