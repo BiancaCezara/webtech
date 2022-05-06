@@ -14,8 +14,10 @@ function countdown(){
     if(left_seconds == 60) left_seconds = '00';
     const elem = document.getElementById("countdown-item-content");
     elem.innerHTML = left_days + "d" + ":\n" + left_hours + "h" + ":\n" + left_minutes +"m" + ":\n" + left_seconds +"s\n" ;
-    if(currentDate === endDate) clearInterval(intervalID);
+    if(currentDate === endDate) {
+        clearInterval(intervalID);
+    }
 }
-
-     intervalID = setInterval(countdown,200);
+     countdown();
+     intervalID = setInterval(countdown,1000);
 

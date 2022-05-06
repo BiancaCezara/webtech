@@ -7,17 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
-    <script src="../slideshow.js"></script>
+
 </head>
 
 <body>
 <header>
     <div class="topnav">
-        <a class="logo" href="index.html"> <img class="logo" src="../images/coffee-cup-svgrepo-com-2.svg"></a>
-        <a href="index.html">Home</a>
+        <a class="logo" href="./index.html"> <img class="logo" src="../images/coffee-cup-svgrepo-com-2.svg"></a>
+        <a href="../index.html">Home</a>
         <a href="coffeetalks.html">Coffee Talks</a>
         <a href="contacts.html">Contacts</a>
         <a class="active" href="internationalcoffeeday.html">International Coffee Day</a>
+        <a href="../authentification.php"><img src="../images/login.svg" alt="login icon"></a>
     </div>
 </header>
 <main>
@@ -27,8 +28,8 @@
         <img id="img3" src="../images/minimal-coffee-cup.jpeg"
              alt="coffee with milk">
 
-        <a href="#nextimage" id="right-arrow">&gt;</a>
-        <a href="#previousimage" id="left-arrow">&lt;</a>
+        <a href="#nextimage" id="right-arrow" onclick="slideOnClick(this.id)">&gt</a>
+        <a href="#previousimage" id="left-arrow" onclick="slideOnClick(this.id)">&lt</a>
 
         <div class="info-item">
             <p class="coffee-day-title"> 5 tips on how to celebrate International Coffee Day</p>
@@ -62,5 +63,7 @@
 <footer>
     © 2022 Bianca Cezara. All rights reserved.
 </footer>
+<script src="../slideshow.js"></script>
 </body>
+
 </html>
