@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <html lang="en">
     <head>
-        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <link type="text/css" rel="stylesheet" href="../css/index.css">
         <title> Sign up</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
@@ -81,5 +81,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </div>
     </body>
-    <script src="checkInput.js"></script>
+    <script src="../js/checkInput.js"></script>
 </html>

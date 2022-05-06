@@ -75,7 +75,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <style>
         body {
             font: 14px sans-serif;

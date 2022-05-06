@@ -23,16 +23,16 @@ if (isset($_POST['submit-button'])) {
             echo "<html lang='en'>
                       <head> 
                         <title>Thank you for sending your idea!</title>
-                        <link rel='stylesheet' href='./css/index.css'>  
+                        <link rel='stylesheet' href='../css/index.css'>  
                       </head>
                       <body class='contacts-body'>
-                            <img class='contacts-bg' src='./images/contacts-pg.jpeg' alt='Contacts Background'>                       
+                            <img class='contacts-bg' src='../images/contacts-pg.jpeg' alt='Contacts Background'>                       
                             <header>
                                 <div class='topnav-contacts'>
-                                    <a href='./pages/index.html'>Home</a>
-                                    <a href='./pages/coffeetalks.html'>Coffee Talks</a>
-                                    <a class='active' href='./pages/contacts.html'>Contacts</a>
-                                    <a href='./pages/internationalcoffeeday.html'>International Coffee Day</a>
+                                    <a href='../pages/index.html'>Home</a>
+                                    <a href='../pages/coffeetalks.html'>Coffee Talks</a>
+                                    <a class='active' href='../pages/contacts.html'>Contacts</a>
+                                    <a href='../pages/internationalcoffeeday.html'>International Coffee Day</a>
                                 </div>
                             </header>
                         </div>
