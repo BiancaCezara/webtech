@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Source+Serif+4&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+
+.banner {
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    max-width: 100%;
+    background: url("../images/background.webp") no-repeat fixed;
+    background-size: 100%;
+}
+
+h1 {
+    position: relative;
+    top: 32vw;
+    font-family: Georgia, serif;
+    font-size: 4.3vw;
+    text-align: center;
+    color: white;
+
+}
+
+.topnav {
+    position: relative;
+    left: 5%;
+    background-color: rgb(247, 242, 235);
+    max-width: 90%;
+    height: 8vw;
+    margin: 0;
+}
+
+.logo {
+
+    position: relative;
+    top: 1.0vw;
+    left: 2.4vw;
+    height: 4.5vw;
+    width: 4.5vw;
+}
+
+.topnav a:not(.logo) {
+    position: relative;
+    align-items: center;
+    padding: 1.5vw;
+    width: 80px;
+    top: 0.5vw;
+    left: 8.0vw;
+    margin: 5px;
+    font-size: 2vw;
+    text-decoration: none;
+    color: rgb(66, 57, 45);
+    font-family: Didot, serif;
+    font-weight: bold;
+}
+
+.topnav a.active {
+    color: rgb(138, 128, 113);
+}
+
+.topnav > a:not(.logo):hover {
+    color: ghostwhite;
+    background-color: rgb(138, 128, 113);
+}
+
+
+.grid-container {
+    position: relative;
+    left: 5%;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 50fr);
+    grid-auto-rows: minmax(50vw, auto);
+    grid-gap: 0.5em;
+    background-color: white;
+
+}
+
+.grid-container > div {
+    background-color: antiquewhite;
+}
+
+
+.grid-item.grid-item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 100%;
+}
+
+.grid-item.grid-item3 {
+    background: url("../images/coffeecup.webp") no-repeat center;
+    background-size: cover;
+}
+
+.grid-item.grid-item4 {
+
+    background: url("../images/table.webp") no-repeat center;
+    background-size: cover;
+}
+
+.grid-item.grid-item5 {
+    background-color: ivory;
+
+
+}
+
+.paragraph1 {
+
+    font-family: Didot, serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    padding: 4.5vw;
+}
+
+p::first-line {
+    color: rgb(56, 47, 35);
+}
+
+.paragraph2 {
+    text-align: right;
+    font-family: Didot, serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    padding: 4.5vw;
+}
+
+p::first-line {
+    color: rgb(56, 47, 35);
+}
+
+.seemore {
+    position: relative;
+    bottom: 5.5vw;
+    left: 15.5vw;
+    padding: 2.5vw;
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: Didot, serif;
+    font-size: 2.5vw;
+    background-color: rgb(76, 67, 55);
+    display: inline-block;
+}
+
+.seemore:hover {
+    background-color: rgb(106, 97, 85);
+    color: white;
+}
+
+
+.internationalcoffeeday {
+    position: relative;
+    bottom: 2vw;
+    left: 6.5vw;
+    padding: 2.5vw;
+    text-decoration: none;
+    color: ivory;
+    font-family: Didot, serif;
+    font-size: 2.5vw;
+    background-color: #78736E;
+    display: inline-block;
+}
+
+.internationalcoffeeday:hover {
+    background-color: #514A44;
+
+}
+
+.body {
+    padding: 0;
+}
+
+.articles-container {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.title-container {
+    padding: 12.5vw;
+    max-width: 100%;
+    color: black;
+    background: url("../images/coffee_beans_.png") center;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.title {
+    position: relative;
+    left: 1.7vw;
+    top: 2vw;
+    text-align: center;
+    font-family: Rockwell, serif;
+    font-weight: bold;
+    font-size: 3.7vw;
+}
+
+.article1-img {
+    position: absolute;
+    left: 65vw;
+    top: 42.9vw;
+    max-height: 12.5vw;
+    border-radius: 2.5vw;
+}
+
+.article-1 {
+    background-color: rgb(240, 237, 233);
+    margin: 1vw;
+    padding: 6vw;
+    border-radius: 2.5vw;
+    font-family: "Big Caslon", serif;
+    max-width: 100%;
+}
+
+.article-1 > a {
+    font-family: "Big Caslon", serif;
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+}
+
+.article-1 > a:hover {
+    text-decoration: underline;
+}
+
+.article-1 > p {
+    font-size: 1.3vw;
+}
+
+.article-2 {
+    background-color: #E9ECF0;
+    margin: 1vw;
+    padding: 6vw;
+    border-radius: 2.5vw;
+    max-width: 100%;
+
+}
+
+.article-2 > a {
+    position: relative;
+    left: 25vw;
+    font-family: "Big Caslon", serif;
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+}
+
+.article-2 > p {
+    font-family: "Big Caslon", serif;
+    position: relative;
+    left: 32vw;
+    font-size: 1.3vw;
+}
+
+.article2-img {
+    position: absolute;
+    max-height: 13vw;
+    border-radius: 1.5vw;
+    left: 5.5vw;
+    top: 64vw;
+}
+
+.article-2 > a:hover {
+    text-decoration: underline;
+}
+
+.article-3 {
+    background-color: rgb(240, 237, 233);
+    margin: 1vw;
+    padding: 6vw;
+    border-radius: 2.5vw;
+    font-family: "Big Caslon", serif;
+    max-width: 100%;
+}
+
+.article-3 > a {
+    font-family: "Big Caslon", serif;
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+}
+
+.article-3 > a:hover {
+    text-decoration: underline;
+}
+
+.article-3 > p {
+    font-size: 1.3vw;
+}
+
+.article3-img {
+    position: absolute;
+    left: 65vw;
+    top: 84.9vw;
+    max-height: 13.5vw;
+    border-radius: 2.5vw;
+}
+
+#hidden-div {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 45vw;
+    top: 32vw;
+    width: 40%;
+    max-height: 40%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3
+}
+
+#hidden-paragraph-1 {
+    text-align: center;
+    background-color: #ddd1c0;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-2:not(#hidden-div-image-1) {
+    text-align: justify;
+    max-width: 70%;
+    margin: 5px;
+    font-size: 1.1vw;
+
+}
+
+#hidden-div-image-1 {
+    float: right;
+    position: relative;
+    right: 1.5vw;
+    top: 4vw;
+    width: 9vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+}
+
+#hidden-div-1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 8vw;
+    top: 71vw;
+    width: 45%;
+    height: 20%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-3 {
+    text-align: center;
+    background-color: #d2dcdd;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-4:not(#hidden-div-image-2) {
+    text-align: justify;
+    position: relative;
+    left: 10vw;
+    top: -7vw;
+    max-width: 70%;
+    height: 70%;
+    margin: 5px;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+
+}
+
+#hidden-div-image-2 {
+    float: start;
+    position: relative;
+    top: 4.5vw;
+    left: 1vw;
+    width: 8.5vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+
+}
+
+#hidden-div-2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 48vw;
+    top: 67vw;
+    width: 45%;
+    height: 21%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    border: 1px solid #c0b4a3;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-5 {
+    text-align: center;
+    background-color: #ddd1c0;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-paragraph-6:not(#hidden-div-image-3) {
+    text-align: justify;
+    position: relative;
+    left: 10vw;
+    top: -5vw;
+    max-width: 70%;
+    height: 70%;
+    margin: 5px;
+    font-family: "Big Caslon", serif;
+    font-size: 1.1vw;
+}
+
+#hidden-div-image-3 {
+    float: start;
+    position: relative;
+    top: 4.5vw;
+    left: 1vw;
+    width: 8.5vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+}
+
+footer {
+    font-family: Didot, serif;
+    position: relative;
+    left: 5%;
+    max-width: 85%;
+    text-align: center;
+    padding: 2vw;
+    font-size: 1.3vw;
+}
+
+.contacts-wrap {
+    position: relative;
+    width: 100%;
+
+}
+
+.contacts-body {
+    overflow: hidden scroll;
+    opacity: 1;
+}
+
+.contacts-bg {
+    opacity: 0.85;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.contacts-content {
+    position: relative;
+    top: 12vw;
+    left: 4vw;
+    font-size: 1.5vw;
+    font-family: Rockwell, serif;
+    color: beige;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.contacts-content > p:first-line {
+    font-size: 3.5vw;
+    color: rgb(66, 50, 38);
+    font-weight: bold;
+}
+
+.topnav-contacts {
+    position: relative;
+    left: 2vw;
+    background: transparent;
+    max-width: 90%;
+    height: 8vw;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    top: 1.0vw;
+    left: 1.4vw;
+    height: 4.5vw;
+    width: 4.5vw;
+}
+
+.topnav-contacts > a {
+    position: relative;
+    align-items: center;
+    padding: 1.5vw;
+    width: 80px;
+    top: 3vw;
+    left: 2.0vw;
+    margin: 5px;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    font-family: Didot, serif;
+    font-weight: bold;
+}
+
+.topnav-contacts a.active {
+    color: rgb(66, 50, 38);
+}
+
+.topnav-contacts > a:not(.active):hover {
+    color: cornsilk;
+
+}
+
+.coffee-day-info {
+    display: grid;
+    position: relative;
+    left: 5vw;
+    grid-auto-columns: 50vw 50vw;
+    grid-gap: 1vw 1vw;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+#sec-banner {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.info-item {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 90%;
+    border: tan solid 1px;
+    border-radius: 5px;
+    overflow: visible;
+    padding: 1.5vw;
+
+
+}
+
+#img1 {
+    position: relative;
+    left: 5vw;
+    height: 35vw;
+    width: 70vw;
+    display: block;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+}
+
+@keyframes imageLoading {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.countdown-item {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    border: azure solid 1px;
+    border-radius: 5px;
+    background: url("../images/coffee-table-wood-background.jpeg") no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+
+}
+
+#countdown-item-content {
+    padding: 4vw;
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    left: 0.5vw;
+    font-family: 'Crimson Pro', serif;
+    font-size: 4.6vw;
+    font-weight: bold;
+    color: rgb(84, 78, 73);
+}
+
+.coffee-day-title {
+    position: relative;
+    left: 1.7vw;
+    top: 0.5vw;
+    text-align: left;
+    font-family: "Big Caslon", serif;
+    font-weight: bolder;
+    font-size: 1.7vw;
+    padding: 0.5vw;
+}
+
+.coffee-day-info li {
+    padding: 0.5vw;
+}
+
+#right-arrow {
+    max-width: 1vw;
+    max-height: 1.4vw;
+    z-index: 1;
+    position: absolute;
+    left: 86vw;
+    top: 18vw;
+    text-align: center;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1vw;
+    padding: 1.2vw;
+    background-color: rgba(91, 86, 83, 0.24)
+}
+
+#left-arrow {
+    max-width: 1vw;
+    max-height: 1.4vw;
+    z-index: 1;
+    position: absolute;
+    top: 18vw;
+    text-align: center;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1vw;
+    padding: 1.2vw;
+    background-color: rgba(91, 86, 83, 0.24)
+}
+
+#img2 {
+    display: none;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+    height: 40vw;
+    width: 90vw;
+    position: relative;
+    left: 0;
+}
+
+#img3 {
+    display: none;
+    animation-name: imageLoading;
+    animation-duration: 1s;
+    height: 40vw;
+    width: 90vw;
+}
+
+#user-input-response{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    min-height: 40vh;
+    font-family: "Big Caslon", serif;
+    font-size: 10vw;
+    color: #42382e;
+    z-index: 999;
+}
+
+#form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    min-height: 30vh;
+
+}
+#form-content{
+    position: relative;
+    border: 2px #8b8785 solid;
+    top: 30vh;
+    padding: 2.5vw;
+}
+
+#form-title{
+    font-family: "Noto Sans Adlam" ;
+    font-weight: bold;
+}
+label{
+    font-family: "Noto Sans Adlam";
+    display: block
+}
+
+
+#login-option{
+    font-family: "Noto Sans Adlam";
+}
+#submit{
+    display: block;
+}
+
+
+input{
+    border-bottom: 2px solid #d2dcdd;
+}
+.invalid-feedback{
+    font-family: "Noto Sans Adlam";
+}
+
