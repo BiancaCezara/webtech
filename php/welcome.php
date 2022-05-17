@@ -1,7 +1,11 @@
 <?php
-if($_SESSION["loggedin"]) {
+
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('location: login.php');
+}
+if($_SESSION['username']) {
     ?>
-    Welcome <?php echo $_SESSION["loggedin"]; ?>. Click here to <a href="logout.php" title="Logout">Logout.</a>
+    Welcome <?php echo $_SESSION["username"]; ?>. Click here to <a href="logout.php" title="Logout">Logout.</a>
     <?php
-}else echo "<h1>Please login first. <a href='login.php'> Click here to login</a></h1>";
-?>
+}

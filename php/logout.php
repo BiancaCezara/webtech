@@ -1,7 +1,11 @@
 <?php
 session_start();
-unset($_SESSION["id"]);
-unset($_SESSION["loggedin"]);
-unset($_SESSION["username"]);
-header("Location:login.php");
+if(isset($_SESSION['username'])){
+    session_destroy();
+    header('location: logout.php');
+}
+else{
+    header('location: login.php');
+}
+
 ?>

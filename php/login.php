@@ -35,16 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $qry = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($qry) == 1) {
-
             $password = md5($password);
-            echo "password hash";
-            var_dump($password);
-            echo "<br";
             try {
                 $row = mysqli_fetch_row($qry);
                 $hash = $row[2];
-                echo "hash from database";
-                var_dump($hash);
+
                 if ($hash == $password) {
                     session_start();
 
@@ -75,7 +70,9 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <style>
         body {
             font: 14px sans-serif;
@@ -87,6 +84,7 @@ mysqli_close($conn);
         }
     </style>
 </head>
+
 <body>
 <div class="wrapper">
     <h2>Login</h2>
@@ -98,10 +96,10 @@ mysqli_close($conn);
     }
     ?>
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="#" method="post" id="login-form">
         <div class="form-group">
             <label>Username</label>
-            <input type="text" name="username" value="<?php echo $username; ?>">
+            <input type="text" id="username" name="username" value="<?php echo $username; ?>">
             <span class="invalid-feedback"><?php echo $username_err; ?></span>
         </div>
         <div class="form-group">
@@ -116,4 +114,23 @@ mysqli_close($conn);
     </form>
 </div>
 </body>
+
+<script>
+    $('#login-form').submit(function(e){
+        e.preventDefault();
+        if($('#username').val().trim() != "" || $('#password').val().trim() != ""){
+            $.ajax({
+                method: "POST",
+                url: "login.php",
+                data: $('#login-form').serialize(),
+                success: function () {
+                    alert('Successfully logged in');
+                }
+            });
+            $('#login-form')[0].reset();
+        }
+    });
+
+
+</script>
 </html>

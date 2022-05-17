@@ -39,7 +39,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $password = md5($password);
         $sql = "INSERT INTO users (user, password) VALUES ('$username','$password')";
         $qry = mysqli_query($conn, $sql);
-        if ($qry)echo "insertion succeded";
 
         if($qry){
             header("location: authentification.php");
@@ -60,13 +59,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <title> Sign up</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+    <header>
+        <div class="topnav">
+            <a class="logo" href="index.html">
+                <img class="logo" src="../images/coffee-cup-svgrepo-com-2.svg">
+            </a>
+            <a class="active" href="index.html">Home</a>
+            <a href="coffeetalks.html">Coffee Talks</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="internationalcoffeeday.html">International Coffee Day</a>
+            <a href="../php/authentification.php"><img src="../images/login.svg" alt="login icon"></a>
+        </div>
+    </header>
     <body>
         <div id="form-wrapper">
             <div id="form-content">
                 <p id="form-title">Sign up</p>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label for="username"> Enter a username:</label>
-                    <input type="text" name="username" id="username" required minlength="6" value="<?php echo $username_error; ?>">
+                    <input type="text" name="username" id="username" required minlength="6">
                     <span id="user-err"><?php echo $username_error; ?></span>
                     <br>
                     <label for="password">Enter a password</label>
